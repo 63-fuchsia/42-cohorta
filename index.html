@@ -13,10 +13,65 @@
 
   <title>Пустой проект</title>
   <script defer src="./scripts.js"></script>
+  <style>
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px 0 20px;
+    margin-top: 85px;
+  }
+
+.card__picture {
+  object-fit: cover;
+  block-size: 100%;
+  inline-size: 100%;
+  display: block;
+}
+
+.card-title {
+  grid-column: 1 / -1;
+}
+
+.sunset {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.icecrem {
+  grid-row: 2 / span 2;
+}
+
+.tape {
+  grid-row: 3 / span 2;
+}
+
+.street {
+  grid-column: 2 / span 2;
+}
+
+  </style>
 </head>
 
 <body>
-
+<section class="card">
+        <h2 class="card-title">А можно в картинках?</h2>
+        
+          <img class="card__picture sunset" src="https://images.unsplash.com/photo-1726607424598-139ff3391ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Солнце на закате в горах" loading="lazy">
+        
+        
+          <img class="card__picture icecrem" src="https://images.unsplash.com/photo-1726607424598-139ff3391ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Чашка мороженного" loading="lazy">
+        
+        
+          <img class="card__picture tape" src="https://images.unsplash.com/photo-1726607424598-139ff3391ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Аудиокассета" loading="lazy">
+        
+        
+          <img class="card__picture books" src="https://images.unsplash.com/photo-1726607424598-139ff3391ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Стопка книг" loading="lazy">
+        
+        
+          <img class="card__picture street" src="https://images.unsplash.com/photo-1726607424598-139ff3391ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Пустая улица" loading="lazy">
+        
+      </section>
 </body>
 
 </html>
